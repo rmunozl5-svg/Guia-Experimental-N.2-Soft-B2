@@ -1,3 +1,6 @@
+//MUÑOZ LUZCANDO RONNY DANIEL SOFTWARE B2
+//GUIA EXPERIMENTAL N.2
+
 // 1. Contar caracteres de una palabra
 function contarCaracteres(palabra) {
   console.log(`La palabra tiene ${palabra.length} letras.`);
@@ -271,6 +274,7 @@ function sumarArreglos(A, B) {
   const C = A.map((n, i) => n + B[i]);
   console.log("C =", C);
 }
+
 
 
 
