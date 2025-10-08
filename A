@@ -1,0 +1,17 @@
+const numeros = [123, 450, 89, 1001, 37];
+
+const numerosInvertidos = numeros.map(numero => {
+  let invertido = 0;
+  let tempNumero = Math.abs(numero); // Usar valor absoluto para manejar números negativos si fuera necesario
+
+  while (tempNumero > 0) {
+    const digito = tempNumero % 10;
+    invertido = invertido * 10 + digito;
+    tempNumero = Math.floor(tempNumero / 10);
+  }
+
+  // Manejar el signo original del número
+  return numero < 0 ? -invertido : invertido;
+});
+
+console.log(numerosInvertidos);
